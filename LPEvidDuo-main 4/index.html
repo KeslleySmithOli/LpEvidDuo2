@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EvidJuri — Inteligência Probatória de Elite</title>
+  <meta name="description" content="Convertemos litígios em ativos analisáveis pelo mercado de capitais. Inteligência probatória, valuation indenizatório e engenharia de nulidades.">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-evidjuri-large.png">
+  <link rel="apple-touch-icon" href="assets/favicon-evidjuri-large.png">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KG4XCJ99');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="style.css?v=20260611-qualification-select-fix">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG4XCJ99"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo"><img src="assets/logo.png" alt="EvidJuri"></a>
+    <div class="nav-links">
+      <a href="#impacto">Impacto</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#case">Case</a>
+      <a href="#lideranca">Liderança</a>
+      <a href="#contato" class="btn-outline nav-cta">Contato</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ HERO (Dobra 1) ═══ -->
+<section class="hero" id="hero">
+  <div class="particles" id="particles"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content fade-up">
+        <span class="section-label">Inteligência Probatória de Elite</span>
+        <h1>Quando o valor do processo é alto<em> a prova técnica decide o resultado</em>.</h1>
+        <p>A EvidJuri atua na estruturação técnica e probatória de litígios complexos envolvendo tecnologia, operações empresariais e grandes disputas financeiras.</p>
+        <a href="#contato" class="btn-primary">Envie seu caso &#8594;</a>
+      </div>
+      <div class="hero-form-wrapper fade-up">
+        <h3>Avaliação Técnica Confidencial</h3>
+        <p class="form-sub">Preencha seus dados e um especialista entrará em contato em até 24h.</p>
+        <form class="site-form ajax-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Use aqui a access_key criada no Web3Forms para executivo@evidjuri.com.br -->
+          <input type="hidden" name="access_key" value="50f87894-b085-42fd-bc0e-f52f8620064e">
+          <input type="hidden" name="subject" value="Novo lead — Diagnóstico Técnico EvidJuri">
+          <input type="hidden" name="from_name" value="Landing EvidJuri">
+          <input type="hidden" name="origem" value="Hero - Diagnóstico Técnico">
+          <input type="hidden" name="message" value="Lead enviado pelo formulário de diagnóstico técnico da landing page.">
+          <input type="checkbox" name="botcheck" class="honey-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="hero-name">Nome</label>
+            <input id="hero-name" type="text" name="name" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-phone">Telefone</label>
+            <input id="hero-phone" class="phone-field" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" placeholder="11999999999" maxlength="15" required>
+          </div>
+
+          <div class="form-group">
+            <label for="hero-email">E-mail</label>
+            <input id="hero-email" type="email" name="email" placeholder="voce@empresa.com.br" required>
+          </div>
+
+          <div class="form-qualification">
+            <div class="qualification-fields">
+              <div class="form-group form-group--select">
+                <label for="hero-claim-value">Valor estimado do processo</label>
+                <div class="select-shell">
+                  <select id="hero-claim-value" name="valor_estimado_processo" required>
+                    <option value="" selected disabled>Selecione uma faixa de valor</option>
+                    <option value="Até R$ 500 mil">Até R$ 500 mil</option>
+                    <option value="Entre R$ 500 mil e R$ 1 milhão">Entre R$ 500 mil e R$ 1 milhão</option>
+                    <option value="Entre R$ 1 milhão e R$ 5 milhões">Entre R$ 1 milhão e R$ 5 milhões</option>
+                    <option value="Acima de R$ 5 milhões">Acima de R$ 5 milhões</option>
+                    <option value="Não sei estimar ainda">Não sei estimar ainda</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group form-group--select">
+                <label for="hero-contact-profile">Perfil de quem está entrando em contato</label>
+                <div class="select-shell">
+                  <select id="hero-contact-profile" name="perfil_contato" required>
+                    <option value="" selected disabled>Selecione o seu perfil</option>
+                    <option value="Empresário ou diretor da empresa envolvida">Empresário ou diretor da empresa envolvida</option>
+                    <option value="Advogado ou escritório de advocacia">Advogado ou escritório de advocacia</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit">Solicitar contato &#8594;</button>
+          <p class="form-disclaimer">Ao enviar, seus dados seguem com sigilo absoluto para a equipe EvidJuri em executivo@evidjuri.com.br.</p>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ IMPACT NUMBERS (Dobra 2) ═══ -->
+<section class="impact" id="impacto">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="section-label">Credenciais</span>
+      <h2 class="section-title">Números que Impactam</h2>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card fade-up">
+        <div class="impact-number" data-target="8" data-prefix="+R$ " data-suffix=" Bi">+R$ 0 Bi</div>
+        <div class="impact-label">Em resultados estruturados para nossos clientes</div>
+      </div>
+      <div class="impact-card fade-up">
+        <div class="impact-number" data-target="20000" data-prefix="+" data-suffix="">+0</div>
+        <div class="impact-label">Processos analisados sob rigor técnico e contábil</div>
+      </div>
+      <div class="impact-card fade-up">
+        <div class="impact-number" data-target="95" data-prefix="" data-suffix="%">0%</div>
+        <div class="impact-label">De assertividade em laudos e recursos em instâncias superiores</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ THESIS (Dobra 3) ═══ -->
+<section class="thesis">
+  <div class="container">
+    <div class="thesis-inner fade-up">
+      <div class="thesis-line"></div>
+      <div>
+        <span class="section-label">Nossa Missão</span>
+        <blockquote>
+          Grandes disputas <em>exigem mais do que</em><br>argumentação jurídica.
+        </blockquote>
+        <p class="section-desc" style="margin-top:24px;">Atuamos em litígios acima de R$1 milhão, estruturando provas, perícias e inteligência técnica para sustentar causas de alta materialidade financeira.</p>
+        <a href="#contato" class="btn-primary" style="margin-top:32px;">Envie seu caso &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES (Dobra 4) ═══ -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">Áreas de Atuação</span>
+      <h2 class="section-title">Somos Especialistas Em</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25Z"/></svg>
+        </div>
+        <h3>Auditoria de Projetos de Software &amp; ERP</h3>
+        <p>Investigação forense de falhas em implementações de Big Techs e sistemas críticos.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+        </div>
+        <h3>Valuation Indenizatório &amp; Lucros Cessantes</h3>
+        <p>Mensuração matemática do dano real, transformando expectativas em números auditáveis.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+        </div>
+        <h3>Engenharia de Nulidades &amp; Reversão de Sentenças</h3>
+        <p>Identificação de vícios periciais para destravar processos estagnados ou desfavoráveis.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21"/></svg>
+        </div>
+        <h3>Atuação como Amicus Curiae</h3>
+        <p>Suporte técnico especializado para fundamentação de teses em tribunais superiores (STJ/STF).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INVESTOR TESTIMONIAL (Dobra 4.5) ═══ -->
+<section class="testimonial-section">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="section-label">Visão do Mercado</span>
+      <h2 class="section-title">O que dizem os investidores</h2>
+    </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-quote-icon">&#8220;</div>
+      <blockquote class="testimonial-text">
+        A EvidJuri entrega o que nenhum escritório tradicional consegue: um laudo que o mercado de capitais consegue ler como ativo. Quando vi a metodologia aplicada ao caso Siemens, ficou claro que estávamos diante de uma tese de investimento — não apenas de um processo judicial.
+      </blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MR</div>
+        <div>
+          <div class="testimonial-name">M. Rodrigues</div>
+          <div class="testimonial-role">Gestor de Fundo de Litigation Finance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CASE STUDY (Dobra 5) ═══ -->
+<section class="case-study" id="case">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">Resultados Comprovados</span>
+      <h2 class="section-title">Case Siemens: +2.000% de crescimento<br>no acordo final</h2>
+    </div>
+    <div class="case-grid">
+      <div class="case-visual fade-up">
+        <div class="case-visual-inner">
+          <div class="case-brand">SIEMENS</div>
+          <div class="case-amount-label">Estimativa inicial</div>
+          <div style="font-family:var(--font-heading);font-size:1.4rem;color:var(--text-muted);text-decoration:line-through;">R$ 433 mil</div>
+          <div class="case-arrow">
+            <div class="line"></div>
+            <span>&#9650;</span>
+            <div class="line"></div>
+          </div>
+          <div class="case-amount-label">Valor reconhecido judicialmente</div>
+          <div class="case-amount">R$ 50 Mi</div>
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(176,152,106,.15);">
+            <div class="case-amount-label">Acordo final para o cliente</div>
+            <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:900;color:var(--gold);">R$ 10,6 Mi</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <ul class="case-steps">
+          <li>
+            <div class="step-marker">01</div>
+            <div class="step-text"><strong>o cenário:</strong> Uma disputa tecnológica inicialmente estimada em R$ 433 mil.</div>
+          </li>
+          <li>
+            <div class="step-marker">02</div>
+            <div class="step-text"><strong>a intervenção EvidJuri:</strong> Através de uma perícia técnica estruturada e da correta mensuração do dano, a tese foi elevada ao seu valor real de mercado.</div>
+          </li>
+          <li>
+            <div class="step-marker">03</div>
+            <div class="step-text"><strong>o resultado:</strong> Uma indenização de R$ 50 milhões reconhecidos judicialmente, resultando em um acordo final de <strong>R$ 10,6 milhões</strong> para o cliente. A prova técnica foi o catalisador da liquidez.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LEADERSHIP (Dobra 6) ═══ -->
+<section class="leadership" id="lideranca">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">Liderança</span>
+      <h2 class="section-title">Inteligência Probatória sob a<br>Liderança de Sthefano Cruvinel</h2>
+    </div>
+    <div class="leadership-grid">
+      <div class="leader-photo fade-up">
+        <img src="assets/sthefano-cruvinel.jpg" alt="Sthefano Cruvinel — CEO EvidJuri">
+      </div>
+      <div class="leader-info fade-up">
+        <h3>Sthefano Cruvinel</h3>
+        <span class="leader-role">Fundador &amp; CEO</span>
+
+        <h4 class="method-title">O que é a 3ANIII?</h4>
+        <p>A metodologia exclusiva funde dois pilares de excelência para eliminar a subjetividade nos tribunais:</p>
+        <ul class="method-list">
+          <li><strong>Triple A (3A):</strong> a mobilização de especialistas globais (&ldquo;Experts&rdquo;) de elite para cada área do caso.</li>
+          <li><strong>N3:</strong> o nível máximo de aprofundamento técnico e processual, garantindo imersão absoluta no tema.</li>
+        </ul>
+
+        <h4 class="method-subtitle">Os diferenciais que destravam o valor real:</h4>
+        <ul class="method-list">
+          <li><strong>Ruptura da monodisciplinaridade:</strong> enquanto peritos tradicionais atuam de forma isolada, nossas equipes reúnem especialistas do ITA, pós-doutores e experts em Jurimetria, Ciências Forenses e Engenharia de Nulidades.</li>
+          <li><strong>Foco estratégico em valuation:</strong> aplicamos o rigor de profissionais de M&amp;A (Fusões e Aquisições) para apurar danos e lucros cessantes, elevando o potencial econômico indenitário e facilitando acordos sem perdas.</li>
+          <li><strong>Rigor acadêmico em instâncias superiores:</strong> construímos teses e pareceres com profundidade científica para sustentações decisivas no STJ e STF.</li>
+          <li><strong>Assertividade de elite:</strong> esta profundidade técnica confere à EvidJuri uma credibilidade nacional com 95% de assertividade histórica.</li>
+        </ul>
+
+        <p style="margin-top:20px;">A EvidJuri opera como uma Boutique Forense, utilizando a metodologia exclusiva 3ANIII para garantir que cada ativo judicial possua o lastro científico exigido pelo mercado de capitais. Nossa atuação é o ponto de equilíbrio entre o Direito de alta complexidade e a Engenharia Financeira.</p>
+
+        <a href="#contato" class="btn-primary" style="margin-top:28px;">Solicitar acesso à visão completa &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT (Dobra 7) ═══ -->
+<section class="contact" id="contato">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; max-width:700px; margin:0 auto;">
+      <span class="section-label">Próximo Passo</span>
+      <h2 class="section-title">Estruture seus ativos judiciais com quem domina a ciência do valor</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form fade-up">
+        <h3>Envie seu caso</h3>
+        <form class="site-form ajax-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Use aqui a access_key criada no Web3Forms para executivo@evidjuri.com.br -->
+          <input type="hidden" name="access_key" value="50f87894-b085-42fd-bc0e-f52f8620064e">
+          <input type="hidden" name="subject" value="Novo caso — Contato EvidJuri">
+          <input type="hidden" name="from_name" value="Landing EvidJuri">
+          <input type="hidden" name="origem" value="Contato - Envie seu caso">
+          <input type="checkbox" name="botcheck" class="honey-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="contact-name">Nome</label>
+            <input id="contact-name" type="text" name="name" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">E-mail Institucional</label>
+            <input id="contact-email" type="email" name="email" placeholder="voce@empresa.com.br" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">Telefone</label>
+            <input id="contact-phone" class="phone-field" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" placeholder="11999999999" maxlength="15" required>
+          </div>
+
+          <div class="form-qualification">
+            <div class="qualification-fields">
+              <div class="form-group form-group--select">
+                <label for="contact-claim-value">Valor estimado do processo</label>
+                <div class="select-shell">
+                  <select id="contact-claim-value" name="valor_estimado_processo" required>
+                    <option value="" selected disabled>Selecione uma faixa de valor</option>
+                    <option value="Até R$ 500 mil">Até R$ 500 mil</option>
+                    <option value="Entre R$ 500 mil e R$ 1 milhão">Entre R$ 500 mil e R$ 1 milhão</option>
+                    <option value="Entre R$ 1 milhão e R$ 5 milhões">Entre R$ 1 milhão e R$ 5 milhões</option>
+                    <option value="Acima de R$ 5 milhões">Acima de R$ 5 milhões</option>
+                    <option value="Não sei estimar ainda">Não sei estimar ainda</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group form-group--select">
+                <label for="contact-profile">Perfil de quem está entrando em contato</label>
+                <div class="select-shell">
+                  <select id="contact-profile" name="perfil_contato" required>
+                    <option value="" selected disabled>Selecione o seu perfil</option>
+                    <option value="Empresário ou diretor da empresa envolvida">Empresário ou diretor da empresa envolvida</option>
+                    <option value="Advogado ou escritório de advocacia">Advogado ou escritório de advocacia</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Descrição do Caso</label>
+            <textarea id="contact-message" name="message" placeholder="Descreva brevemente o contexto, valores envolvidos e estágio atual do caso." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit">Enviar caso &#8594;</button>
+          <p class="form-disclaimer">Sua mensagem é tratada com confidencialidade e enviada diretamente para executivo@evidjuri.com.br.</p>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+        <div class="sigilo-badge">&#128274; Sigilo Absoluto Garantido</div>
+      </div>
+      <div class="fade-up">
+        <div class="trust-items">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+            </div>
+            <div>
+              <h4>Sigilo Absoluto</h4>
+              <p>Todas as informações são tratadas sob o mais rigoroso protocolo de confidencialidade.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            </div>
+            <div>
+              <h4>Resposta em 24h</h4>
+              <p>Um especialista sênior fará contato em até 24 horas após o envio.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+            </div>
+            <div>
+              <h4>Diagnóstico Técnico</h4>
+              <p>Análise preliminar gratuita do potencial probatório do seu caso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRESS / NA MÍDIA — CARROSSEL DE REVISTAS (Dobra 6.5) ═══ -->
+<section class="press-section" id="midia">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <span class="section-label">Repercussão Nacional</span>
+      <h2 class="section-title">Na Mídia</h2>
+      <p class="section-desc" style="max-width:560px;margin:0 auto 0;color:var(--text-muted);">A EvidJuri nas principais publicações de negócios e direito do país.</p>
+    </div>
+  </div>
+
+  <div class="magazine-carousel-wrapper fade-up">
+    <div class="magazine-track" id="magazineTrack">
+      <a href="https://exame.com/negocios/ele-contraiu-uma-divida-de-r-2-milhoes-para-abrir-o-negocio-agora-aos-35-fatura-r-78-milhoes/" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-exame.png" alt="Exame — EvidJuri fatura R$ 78 milhões" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">EXAME</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+
+      <a href="https://estadao.com.br/economia/coluna-do-broad/acao-da-minas-mais-contra-a-algar-avanca-na-justica-e-pode-superar-r-1-bi/" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-estadao.png" alt="Estadão — Ação pode superar R$ 1 bi" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">ESTAD&Atilde;O</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+
+      <div class="magazine-cover mag--photo">
+        <img src="assets/press-pipeline.png" alt="Pipeline — Valuation de R$ 1 bi recusado" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">PIPELINE</span>
+        </div>
+      </div>
+
+      <a href="https://www1.folha.uol.com.br/colunas/painelsa/2026/04/sogem-pode-ter-investidores-para-financiar-disputa-judicial-contra-a-totvs-avaliada-em-r-500-milhoes.shtml" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-folha2.png" alt="Folha de S.Paulo — Sogem vs Totvs R$ 500 mi" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">FOLHA DE S.PAULO</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+
+      <a href="https://valor.globo.com/empresas/noticia/2026/03/20/processo-contra-totvs-avanca-e-pode-custar-r-500-milhoes.ghtml" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-valor2.png" alt="Valor Econômico — Processo Totvs R$ 500 milhões" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">VALOR ECON&Ocirc;MICO</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+
+      <a href="https://forbes.com.br/forbes-mkt/2024/08/mais-que-uma-rede-twitter-foi-a-queridinha-da-publicidade-brasileira/" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-forbes.jpeg" alt="Forbes — Mais que uma rede: Twitter foi a queridinha da publicidade brasileira" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">FORBES</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+
+      <a href="https://www1.folha.uol.com.br/colunas/painelsa/2025/12/em-batalha-contra-big-techs-evidjuri-capta-r-40-milhoes-com-venda-de-recebiveis.shtml" target="_blank" rel="noopener" class="magazine-cover mag--photo">
+        <img src="assets/press-folha.png" alt="Folha de S.Paulo — EvidJuri capta R$ 40 milhões" class="mag-photo">
+        <div class="mag-photo-overlay">
+          <span class="mag-photo-pub">FOLHA DE S.PAULO</span>
+          <span class="mag-photo-cta">Ler mat&eacute;ria &#8594;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo"><img src="assets/logo.png" alt="EvidJuri"></div>
+      <div class="footer-info">
+        <p>EvidJuri — Inteligência Probatória de Elite</p>
+        <p>CNPJ: 12.577.079/0001-05</p>
+        <p style="margin-top:4px;">&copy; 2025 EvidJuri. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-seals">
+        <span class="seal">ISO 27001</span>
+        <span class="seal">LGPD</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ STICKY MOBILE CTA ═══ -->
+<a href="#contato" class="sticky-cta" id="stickyCta" style="display:flex;align-items:center;gap:8px;">&#9998; Enviar meu caso</a>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+(function createParticles() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 30; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    p.style.animationDelay = Math.random() * 10 + 's';
+    p.style.animationDuration = (8 + Math.random() * 10) + 's';
+    container.appendChild(p);
+  }
+})();
+
+const fadeEls = document.querySelectorAll('.fade-up');
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+fadeEls.forEach((el) => fadeObserver.observe(el));
+
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const duration = 2000;
+  const start = performance.now();
+
+  function update(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(eased * target);
+    el.textContent = prefix + current.toLocaleString('pt-BR') + suffix;
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+const counterEls = document.querySelectorAll('.impact-number');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+counterEls.forEach((el) => counterObserver.observe(el));
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+(function initMarquee() {
+  const track = document.getElementById('magazineTrack');
+  if (!track) {
+    return;
+  }
+
+  const strip = document.createElement('div');
+  strip.className = 'mag-strip';
+
+  const cards = Array.from(track.querySelectorAll('.magazine-cover'));
+  cards.forEach((card) => strip.appendChild(card));
+
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    strip.appendChild(clone);
+  });
+
+  track.appendChild(strip);
+})();
+
+function getPhoneDigits(value) {
+  return value.replace(/\D/g, '').slice(0, 11);
+}
+
+function formatPhoneValue(digits) {
+  if (digits.length === 11) {
+    return digits.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+  }
+
+  if (digits.length === 10) {
+    return digits.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+  }
+
+  return digits;
+}
+
+document.querySelectorAll('.phone-field').forEach((field) => {
+  field.addEventListener('focus', () => {
+    field.value = getPhoneDigits(field.value);
+  });
+
+  field.addEventListener('input', () => {
+    const digits = getPhoneDigits(field.value);
+    field.value = digits;
+
+    if (digits.length > 0 && digits.length < 10) {
+      field.setCustomValidity('Informe um telefone com DDD.');
+      return;
+    }
+
+    field.setCustomValidity('');
+  });
+
+  field.addEventListener('blur', () => {
+    const digits = getPhoneDigits(field.value);
+
+    if (digits.length === 10 || digits.length === 11) {
+      field.value = formatPhoneValue(digits);
+      field.setCustomValidity('');
+      return;
+    }
+
+    if (digits.length > 0) {
+      field.setCustomValidity('Informe um telefone valido com 10 ou 11 digitos.');
+      field.reportValidity();
+    } else {
+      field.setCustomValidity('');
+    }
+  });
+});
+
+document.querySelectorAll('.ajax-form').forEach((form) => {
+  const submitButton = form.querySelector('.form-submit');
+  const status = form.querySelector('[data-form-status]');
+  const defaultButtonLabel = submitButton ? submitButton.textContent : '';
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!status || !submitButton) {
+      return;
+    }
+
+    if (window.location.protocol === 'file:') {
+      status.textContent = 'Abra esta pagina por um servidor local, como http://127.0.0.1:4173, porque o envio externo nao deve ser testado via file://.';
+      status.className = 'form-status is-error';
+      return;
+    }
+
+    const phoneFields = form.querySelectorAll('.phone-field');
+
+    phoneFields.forEach((field) => {
+      const digits = getPhoneDigits(field.value);
+      field.value = formatPhoneValue(digits);
+
+      if (digits.length !== 10 && digits.length !== 11) {
+        field.setCustomValidity('Informe um telefone valido com 10 ou 11 digitos.');
+      } else {
+        field.setCustomValidity('');
+      }
+    });
+
+    if (!form.reportValidity()) {
+      event.preventDefault();
+      status.textContent = 'Revise os campos destacados antes de enviar.';
+      status.className = 'form-status is-error';
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
+    status.textContent = 'Enviando seus dados...';
+    status.className = 'form-status';
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+      const result = await response.json().catch(() => ({}));
+      const errorMessage = result.message || (result.body && result.body.message);
+
+      if (!response.ok || !result.success) {
+        throw new Error(errorMessage || 'Nao foi possivel enviar agora.');
+      }
+
+      form.reset();
+      status.textContent = 'Formulario enviado com sucesso. A equipe EvidJuri fara contato em breve.';
+      status.className = 'form-status is-success';
+    } catch (error) {
+      status.textContent = error.message || 'Nao foi possivel enviar agora. Tente novamente em instantes.';
+      status.className = 'form-status is-error';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = defaultButtonLabel;
+    }
+  });
+});
+</script>
+
+</body>
+</html>
