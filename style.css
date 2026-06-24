@@ -837,10 +837,17 @@ body {
 }
 
 .press-section {
-  padding: 100px 0 70px;
+  padding: 44px 0 92px;
+  background: linear-gradient(180deg, rgba(11,13,12,.98) 0%, var(--dark-bg) 100%);
   overflow: hidden;
+  position: relative;
 }
-.press-section .section-desc { margin-top: 14px; }
+.press-section .container { position: relative; z-index: 1; }
+.press-section .section-desc {
+  max-width: 580px;
+  margin: 14px auto 0;
+  color: var(--text-muted);
+}
 
 .magazine-carousel-wrapper {
   position: relative;
@@ -849,6 +856,7 @@ body {
   align-items: center;
 }
 .magazine-track {
+  position: relative;
   overflow: hidden;
   padding: 16px 0 40px;
   flex: 1;
@@ -859,20 +867,22 @@ body {
   display: flex;
   gap: 28px;
   width: max-content;
-  animation: magScroll 34s linear infinite;
+  animation: magScroll var(--mag-scroll-duration, 72s) linear infinite;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 .magazine-carousel-wrapper:hover .mag-strip {
   animation-play-state: paused;
 }
 @keyframes magScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-1 * var(--mag-scroll-distance, 50%)), 0, 0); }
 }
 
 .magazine-cover {
   flex: 0 0 252px;
-  height: 390px;
+  aspect-ratio: 252 / 390;
+  height: auto;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -883,6 +893,9 @@ body {
   position: relative;
   box-shadow: 0 10px 40px rgba(0,0,0,.55);
   user-select: none;
+}
+.magazine-cover.is-clone {
+  pointer-events: none;
 }
 .magazine-cover:hover {
   transform: translateY(-10px) scale(1.025);
@@ -993,7 +1006,24 @@ body {
   .section-title { font-size: clamp(1.5rem, 5vw, 2rem); }
   .footer-inner { flex-direction: column; text-align: center; }
   .testimonial-card { padding: 36px 28px; }
-  .magazine-track { padding: 16px 48px 40px; }
+  .press-section { padding: 28px 0 72px; }
+  .magazine-carousel-wrapper { margin-top: 36px; }
+  .magazine-track {
+    padding: 8px 16px 24px;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .mag-strip { gap: 18px; }
+  .magazine-cover { flex-basis: min(68vw, 220px); }
+  .mag-photo-overlay {
+    padding: 34px 14px 12px;
+    gap: 12px;
+  }
+  .mag-photo-pub { font-size: .56rem; }
+  .mag-photo-cta {
+    opacity: 1;
+    font-size: .58rem;
+  }
   .carousel-btn--prev { left: 4px; }
   .carousel-btn--next { right: 4px; }
   .form-qualification { padding: 16px 16px 8px; }
